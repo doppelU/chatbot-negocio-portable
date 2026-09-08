@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chatbot de Negocio Portable</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <div>
+        <h1>Chatbot de Negocio Portable</h1>
+        <p class="app__subtitle">Un mismo motor, distinto negocio según el contexto cargado.</p>
+      </div>
+      <label class="context-picker">
+        <span>Negocio activo</span>
+        <select id="context-select"></select>
+      </label>
+    </header>
+
+    <main class="chat" id="chat"></main>
+
+    <form class="composer" id="composer">
+      <input
+        id="message-input"
+        type="text"
+        autocomplete="off"
+        placeholder="Escribe tu mensaje..."
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
